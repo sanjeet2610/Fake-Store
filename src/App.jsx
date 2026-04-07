@@ -3,11 +3,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Cart from "./pages/cart/Cart";
 import { useCartContext } from "./context/CartContext";
+import Header from "./components/header/Header";
 const App = () => {
   const { products } = useCartContext();
   console.log(products);
   return (
     <>
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
