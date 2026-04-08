@@ -1,7 +1,15 @@
-import React from "react";
+import Body from "./body/Body";
+import FilterBar from "./filterBar/FilterBar";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <div className="flex">
+        <FilterBar />
+        <Body />
+      </div>
+    </>
+  );
 };
 
 export default Home;
